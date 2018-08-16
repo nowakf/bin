@@ -1,0 +1,11 @@
+#!/bin/bash
+export XAUTHORITY=/home/nowakf/.Xauthority
+export DISPLAY=':0'
+# Check AC adapter status and Battery Voltage
+if [ $(cat /sys/class/power_supply/AC/online) = "0" ] && \
+   [ $(cat /sys/class/power_supply/BAT0/voltage_now) \< "11100000" ]; then
+       # Display Notification
+       if [ $DISPLAY ]; then notify-send -u critical \
+       -i /usr/share/icons/Antu/status/64/battery-low.svg \
+       -t 2000 "Battery Critically Low" "Plug in to AC or Suspend immediately"; fi
+fi

@@ -1,0 +1,30 @@
+#!/usr/bin/python
+
+import os
+import sys
+
+os.environ['XDG_RUNTIME_DIR'] = '/run/user/1000'
+
+alertText = ""
+urgency = "critical"
+
+if len(sys.argv) == 1:
+   alertText = "something is finished!" 
+else:
+    for arg in sys.argv[1:]:
+        if arg.startswith("-"):
+            if arg == "-l":
+                urgency = "low"
+            if arg == "-n":
+                urgency = "normal"
+            if arg == "-c":
+                urgency = "critical"
+        else: 
+            alertText += arg + " "
+
+os.system('notify-send --urgency='+urgency+' "'+alertText+'"')
+
+if os.path.isfile("/home/francis/Music/hoursounds/"+urgency+".ogg"):
+    os.system('paplay '"/home/francis/Music/hoursounds/"+urgency+".ogg")
+else:
+    os.system('paplay '"/home/francis/Music/hoursounds/default.ogg")
