@@ -24,7 +24,7 @@ monday = {
         14: "Eat lunch",
         15: "physical",
         16: "maths",
-        17: "writing",
+        17: "clean baby",
         18: "start cooking supper"
         }
 
@@ -37,7 +37,7 @@ tuesday = {
         14: "Eat lunch",
         15: "physical",
         16: "maths",
-        17: "shopping",
+        17: "clean baby",
         18: "start cooking supper"
         }
 
@@ -50,7 +50,7 @@ wednesday = {
         14: "Eat lunch",
         15: "physical",
         16: "maths",
-        17: "writing",
+        17: "clean baby",
         18: "start cooking supper"
         }
 
@@ -63,7 +63,7 @@ thursday = {
         14: "Eat lunch",
         15: "physical",
         16: "electronics",
-        17: "writing",
+        17: "clean baby",
         18: "writing"
         }
 
@@ -76,7 +76,7 @@ friday = {
         14: "Eat lunch",
         15: "physical",
         16: "electronics",
-        17: "writing",
+        17: "clean baby",
         18: "writing"
         }
 
@@ -89,7 +89,7 @@ saturday = {
         14: "Eat lunch",
         15: "",
         16: "shopping",
-        17: "writing",
+        17: "clean baby",
         18: ""
         }
 
@@ -102,7 +102,7 @@ sunday = {
         14: "Eat lunch",
         15: "",
         16: "",
-        17: "writing",
+        17: "clean baby",
         18: "start cooking supper",
         }
 
